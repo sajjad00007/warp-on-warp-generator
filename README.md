@@ -13,6 +13,7 @@ This Python program, named "WarpOnWarp Generator" facilitates the generation of 
 
 - Python 3.x
 - Requests library (Install using `pip install requests`)
+- Pyperclip
 
 
 ## Usage
