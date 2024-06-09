@@ -6,6 +6,7 @@ This Python program, named "WarpOnWarp Generator" facilitates the generation of 
 
 - Generates WarpOnWarp configurations using the API from "zeroteam.top."
 - Allows customization of clean IP addresses for enhanced privacy.
+- Copies the Generated configuration to Clipboard
 - Saves the generated configurations in the `/output` directory.
 
 ## Prerequisites
