@@ -3,6 +3,7 @@ import os
 import random
 import string
 import requests
+import pyperclip
 
 # Define colors for better output formatting
 GREEN = "\033[92m"
@@ -42,6 +43,8 @@ def register_warp_account() -> dict:
         print(f"{RED}Error registering account{RESET}\n{e}")
         raise
 
+def copy_to_clipboard(config):
+    pyperclip.copy(config)
 
 def main():
     try:
@@ -95,6 +98,9 @@ def main():
         config_path = os.path.join("output", config_name)
         with open(config_path, "w") as f:
             json.dump(json_file_to_save, f, indent=2)
+
+        # Copy the Configuration to Clipboard
+        copy_to_clipboard(config=json.dumps(json_file_to_save, indent=2))
 
         print(
             f"\n{GREEN}Config was successfully created!{RESET}\n{GREEN}Generated config saved:\n {RESET}{config_path}\n"
