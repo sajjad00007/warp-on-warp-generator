@@ -44,7 +44,12 @@ def register_warp_account() -> dict:
         raise
 
 def copy_to_clipboard(config):
+    """Copy Configuration to Clipboard"""
     pyperclip.copy(config)
+
+    print(
+            f"\n{GREEN}Config Copied to Clipboard!{RESET}\n"
+    )
 
 def main():
     try:
