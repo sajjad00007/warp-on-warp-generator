@@ -18,7 +18,7 @@ This Python program, named "WarpOnWarp Generator" facilitates the generation of 
 
 ## Usage
 
-1. Clone the repository to your local machine.
+1. Clone the repository to your local machine or Termux.
 ```bash
 git clone https://github.com/drunkleen/warp-on-warp-generator
 ```
